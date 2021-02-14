@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
+body{
+    height: 100vh;
+    background-image: url("https://www.wallpapertip.com/wmimgs/172-1726051_white-and-orange.jpg");
+    background-size: cover;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5{
+    font-family: 'Poppins', sans-serif;
+}

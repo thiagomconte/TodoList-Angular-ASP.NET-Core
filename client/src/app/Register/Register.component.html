@@ -1,0 +1,14 @@
+<div class="register-page d-flex flex-column">
+  <div class="header d-flex flex-column">
+    <h1 class="my-auto">Register</h1>
+  </div>
+  <div class="register-content d-flex flex-column">
+    <form [formGroup] = "registerForm" (submit)="submitRegisterForm()" class="d-flex flex-column">
+      <input type="text" formControlName="name" placeholder="Name">
+      <input type="email" formControlName="email" placeholder="E-mail">
+      <input type="password" formControlName="password" placeholder="Password">
+      <button class="btn">REGISTER</button>
+    </form>
+  </div>
+  <span class="mb-3">Already have an account? Sign in <a routerLink="/">here</a> </span>
+</div>

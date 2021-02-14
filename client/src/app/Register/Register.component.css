@@ -1,0 +1,63 @@
+.register-page{
+    margin: 3rem auto;
+    text-align: center;
+    border: 1px solid rgba(0,0,0,0);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    width: 60%;
+    min-width: 320px;
+    box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+    background:rgba(255, 255, 255, 0.6);
+}
+
+.register-page .header {
+    background-color: rgb(255, 189, 45);
+    margin-bottom: 2rem;
+    height: 4.5rem;
+}
+
+.register-page input {
+    width: 60%;
+    margin: 1rem auto;
+    min-width: 300px;
+    border: none;
+    border-bottom: 1px solid black;
+    padding-left: 0.5rem;
+    height:3rem;
+    font-size: 1.2rem;
+    transition: all .5s ease-out;
+    background: transparent;
+}
+
+.register-page input:focus{
+    outline:none;
+    border-bottom: 1px solid rgb(255, 189, 45);
+    
+}
+
+.register-page input:focus::placeholder{
+    color: rgb(255, 189, 45);
+}
+
+.register-page .btn{
+    margin: 2rem auto;
+    background: rgb(255, 189, 45);
+    width: 8rem;
+    height: 3rem;
+    font-weight: 500;
+}
+
+.register-page .btn:hover{
+    background: rgb(212, 145, 0);
+    transition: all .2s ease-out;
+}
+
+.register-page span a{
+    color: rgb(255, 189, 45);
+}
+
+@media(max-width: 768px){
+    .register-page{
+        width: 90%;
+    }
+}

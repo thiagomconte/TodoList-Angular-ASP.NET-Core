@@ -1,0 +1,17 @@
+<div class="todo-page">
+  <div class="insert-todo">
+    <form [formGroup]="todoForm" (submit)="submitTodoForm()" class="d-flex">
+      <input type="text" formControlName="description"placeholder="Todo" />
+      <button class="btn" type="submit"><i class="far fa-plus-square"></i></button>
+    </form>
+  </div>
+
+  <div class="todo-list mt-3">
+    <ul>
+      <li class="list-item" *ngFor="let todo of todos; let i = index" [attr.data-index]="i">
+        <span>{{i+1}}</span> {{todo.description}}
+        <div class="wrapper"><i (click)="deleteTodo(todo.id, i)" class="fas fa-minus-circle"></i></div>
+      </li>
+    </ul>
+  </div>
+</div>

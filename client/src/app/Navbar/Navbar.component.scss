@@ -1,0 +1,15 @@
+.navbar {
+  background: rgb(255, 189, 45);
+  box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+}
+
+.navbar a {
+  color: black;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.navbar a:hover {
+  color: rgb(138, 94, 0);
+}
+

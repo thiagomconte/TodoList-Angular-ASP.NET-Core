@@ -1,0 +1,13 @@
+<div class="login-page d-flex flex-column">
+  <div class="header d-flex flex-column">
+    <h1 class="my-auto">Login</h1>
+  </div>
+  <div class="login-content d-flex flex-column">
+    <form [formGroup]="loginForm" (submit)="submitLoginForm()" class="d-flex flex-column">
+      <input formControlName="email" type="email" placeholder="E-mail">
+      <input formControlName="password" type="password" placeholder="Password">
+      <button class="btn">ENTER <i class="fas fa-sign-in-alt"></i></button>
+    </form>
+  </div>
+  <span class="mb-3">Don't have an account? Sign up <a routerLink="/register">here</a> </span>
+</div>
